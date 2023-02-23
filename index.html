@@ -7,9 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruby Rose</title>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .flex-container>div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
     body {
         background-color: rgb(255, 255, 255);
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     h1 {
@@ -22,14 +40,15 @@
 
     .navBarTop {
         display: flex;
-        background-color: rgb(250, 161, 231);
+        justify-content: space-between;
         align-items: center;
+        background-color: rgb(250, 161, 231);
 
     }
 
     .navBarBottom {
         display: flex;
-        background-color: rgb(255, 255, 255);
+        background-color: #333;
         justify-content: center;
     }
 
@@ -37,15 +56,43 @@
 
     .navBarBottom>div {
         margin: 40px;
-        background-color: rgb(255, 255, 255);
+        background-color: #333;
         padding: 20px;
     }
 
     .instagram-flex {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(255, 255, 255);
-        margin-left: 800px;
+        background-color: #333;
+        margin-left: 950px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(250, 161, 231);
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 100px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .borda-imagem{
+        
     }
 </style>
 
@@ -53,38 +100,39 @@
     <div class="navBarTop">
 
         <img src="https://static.cdnlive.com.br/uploads/711/etc/16383805564912.png" alt="imagem da logo ruby rose"
-            width="300" height="150">
-
-        <div class="instagram-flex">
-
-            <a href="https://www.instagram.com/rubyrosebrasil/"><img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png" alt="imagen da logo do instragram" style="width:80px;height:80px;"></a>
-
-        </div>
+            width="200" height="100">
+        <input type="text" name="search" placeholder="Search..">
     </div>
-
 
 
 
 
     <div class="navBarBottom">
 
-        <div>
-            <a href="https:/api.whatsapp.com/message/7ESFK4ZDCQOHH1?autoload=1&app_absent=0"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png"
-                    alt="essa é a imagem da logo do whatsapp" style="width:80px;height:80px;"></a>
-        </div>
-        <div>
-            <a href="https://www.revendarubyrose.com.br/cliente/cadastro"><img
-                    src="https://cdn-icons-png.flaticon.com/512/3641/3641390.png" alt="imagen de cadrasto"
-                    style="width:80px;height:80px;"></a>
-        </div>
-        <div>
-            <a href="https://www.rubyrosemaquiagem.com.br/categoria/169"><img
-                    src="https://w7.pngwing.com/pngs/408/524/png-transparent-sales-computer-icons-discounts-and-allowances-hand-drawn-border-text-label-logo.png"
-                    alt="imagen de cadrasto" style="width:80px;height:90px;"></a>
-        </div>
+    </div>
+    <div class="topnav">
+        <a href="historia.html" target="_blank">Historia</a>
+        <a href="https://www.revendarubyrose.com.br/cliente/cadastro" target="_blank">Revendedora</a>
+        <a href="https://www.rubyrosemaquiagem.com.br/categoria/169" target="_blank">Promoções</a>
+        <a href="./contato.html" target="_blank">Contato</a>
     </div>
 
+    <div class="flex-container">
+
+        <div class="borda-imagem">
+            <a href="https://www.rubyrosemaquiagem.com.br/produto/3039-corretivo-melu-ruby-rose"><img  alt="W3Schools" src="https://static.cdnlive.com.br/uploads/724/produto/16765839825334_thumb.jpg" width="250" height="200">
+        </div>
+        <div>
+            <a href="https://www.rubyrosemaquiagem.com.br/produto/3029-quarteto-contorno-blush-iluminador-melu-rr75311-rubyrose"><img alt="W3Schools" src="https://static.cdnlive.com.br/uploads/724/unidade/16765839727293_thumb.jpg" width="250" height="200">
+        </div>
+        <div>
+            <a href="https://www.rubyrosemaquiagem.com.br/produto/3033-lip-gloss-melu-rr72006-ruby-rose"><img alt="W3Schools" src="https://static.cdnlive.com.br/uploads/724/unidade/16765839769831_thumb.jpg" width="250" height="200">
+        </div>
+        <div>
+            <a href="https://www.rubyrosemaquiagem.com.br/produto/3035-batom-bala-matte-melu-rr5676-cm06-rubyrose"><img alt="W3Schools" src="https://static.cdnlive.com.br/uploads/724/produto/16765839788855_detalhe.jpg" width="250" height="200">
+        </div>
+
+    </div>
 </body>
 
 </html>
